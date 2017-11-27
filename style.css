@@ -1,0 +1,195 @@
+/*
+Resetear el navegador
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+/*
+Crear container
+*/
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.row:before, .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+[class*="col-"] {
+  float: left;
+  min-height: 7px;
+  padding: 10px;
+}
+
+/*
+formula para el ancho de las columnas (numero columnas / 12) * 100
+*/
+
+.col-1 {
+  width: 8.333333%;
+}
+
+.col-2 {
+  width: 16.666667%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.333333%;
+}
+
+.col-5 {
+  width: 41.666667%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.333333%;
+}
+
+.col-8 {
+  width: 66.666667%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.333333%;
+}
+
+.col-11 {
+  width: 91.666667%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+/*MIS ESTILOS*/
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 450px) {
+  [class*="col-"] {
+    width: 100%;
+  }
+  h2{
+    font-size: 40px;
+  }
+  h3{
+    font-size: 32px;
+  }
+  img{
+    width: 300px;
+    height: 300px;
+  }
+  #menu1{
+    display: none;
+  }
+  #menu2{
+    display: block !important;
+  }
+  #menu2 p{
+    color: white;
+    float: left;
+  }
+  .fa{
+    margin-left: 240px;
+    padding: 6px;
+    margin-top: -3px;
+    border-radius: 3px;
+    border: .5px solid white;
+  }
+}
+
+
+#header{
+  height: 60px;
+  background-color: #373C43;
+  color: white;
+}
+#menu1{
+  margin-left: 80px;
+}
+#menu p{
+  float: left;
+  margin-right: 10px;
+}
+#section1{
+    background-image: url(img/header.jpg);
+    opacity:0.6;
+    filter: grayscale(50%);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 500px;
+    color: white;
+    text-align: center;
+    object-fit: cover;
+}
+#text1{
+  height: 500px;
+  vertical-align: middle;
+}
+h1{
+    line-height: 1.5;
+    font-size: 74px;
+    font-weight: lighter;
+    margin-top: 100px;
+}
+h3{
+  font-size: 42px;
+  font-weight: 100;
+}
+.row1{
+  height: 400px;
+  text-align: center;
+}
+#text2{
+  padding: 70px;
+}
+#text2 h2, #text2 p{
+  text-align: left;
+  font-weight: 100;
+  line-height: 1.5;
+}
+h2{
+  font-size: 50px;
+}
+.row1 img{
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+}
+#footer{
+  height: 100px;
+  background-color: #373C43;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+#footer p{
+  padding: 10px;
+}
+
+
+
